@@ -17,7 +17,7 @@
   
      下载：[http://treedom.com/](http://treedom.com/)内网服务->浏览共享->软件
 
-  2. filezilla(win)   
+  2. filezilla(win)   
 
 * ****code编辑器****
 
@@ -44,11 +44,11 @@
 ## 规范 ##
 
    * ### 命名规范 ###
-     - ****文件命名****
+     - ****文件命名****
 
-       1. 文件夹及文件名统一英文<font color=#ff0000>不允许出现中文命名</font>。
+       1. 文件夹及文件名统一英文<span style="color:#ff0000">不允许出现中文命名</span>。
        
-       2. 对于单个资源文件，文件名中<font color=#ff0000>不允许出现空格</font>，利用下划线将其分隔。
+       2. 对于单个资源文件，文件名中<span style="color:#ff0000">不允许出现空格</span>，利用下划线将其分隔。
        ```
        以图片资源为例： bg_xxx.png
        ```
@@ -67,7 +67,7 @@
      
           ***css*** 
 
-          1. 不允许出现中文命名<font color=#ff0000>统一英文</font>（原则上不使用拼音，特殊情况可以使用)。
+          1. 不允许出现中文命名<span style="color:#ff0000">统一英文</span>（原则上不使用拼音，特殊情况可以使用)。
        
           2. class & id 命名规则。
           
@@ -83,7 +83,7 @@
             
                > css命名规则详细见[模块化CSS指引.pdf](模块化CSS指引.pdf)    
 
-          3. 不允许出现<font color=#ff0000>无意义</font>的class、id命名
+          3. 不允许出现<span style="color:#ff0000">无意义</span>的class、id命名
           ```
           例：.list-a, .list-b
           ```
@@ -91,15 +91,15 @@
           ```
           例：.mod-index-page
 
-          错误示例： .modIndexPage .MODINDEX
+          错误示例： .modIndexPage .MODINDEX
           ```
           - - -
 
           ***js*** 
           
-          1. 不允许出现中文命名<font color=#ff0000>统一英文</font>（原则上不使用拼音，特殊情况可以使用)。
+          1. 不允许出现中文命名<span style="color:#ff0000">统一英文</span>（原则上不使用拼音，特殊情况可以使用)。
 
-          2. 函数名称应该有意义，不允许出现<font color=#ff0000>无意义</font>的函数名。
+          2. 函数名称应该有意义，不允许出现<span style="color:#ff0000">无意义</span>的函数名。
 
           3. 变量名规则与函数一样。
 
@@ -109,10 +109,10 @@
           // 变量是否播放 ==> var isPlay = false;
 
           错误示例：
-          函数： fn(); afn(); aaa() ...
+          函数： fn(); afn(); aaa() ...
           变量:  var a = 1;  var bbbb = document.querySelector('body');
           ```
-          4. 单词的分隔统一使用<font color=#ff0000>驼峰式</font>，单词连接不允许出现下划线，减号...。
+          4. 单词的分隔统一使用<span style="color:#ff0000">驼峰式</span>，单词连接不允许出现下划线，减号...。
 
           ```
           例：createShader();
@@ -126,9 +126,9 @@
         
         ***html***
         
-        1. 不允许出现<font color=#ff0000>无意义</font>的标签。
+        1. 不允许出现<span style="color:#ff0000">无意义</span>的标签。
 
-        2. 利用<font color=#ff0000>class</font>去表示dom的意义，尽量<font color=#ff0000>少用id</font>。
+        2. 利用<span style="color:#ff0000">class</span>去表示dom的意义，尽量<span style="color:#ff0000">少用id</span>。
 
         ```
         例：
@@ -173,14 +173,14 @@
         
         ***js***
 
-        1. 尽量以<font color=#ff0000>模块化</font>的思路构建代码。
+        1. 尽量以<span style="color:#ff0000">模块化</span>的思路构建代码。
 
         2. [eslint]() 规则。
 
 
         <br/>
 
-        > 统一缩进格式： <font color=#ff0000>：缩进形式一个tab（4格）</font>
+        > 统一缩进格式： <span style="color:#ff0000">：缩进形式一个tab（4格）</span>
 
 ## 项目框架简介 ##
 
@@ -205,7 +205,7 @@
     │   ├── js            
     │   │   ├── app                            ----存一些公用，自有模块文件
     │   │   │   ├── Config.js                  ----配置文件，在项目中相当于一个全局对象
-    │   │   │   ├── XXXXViewController.js      ----页面模块控制器，每个页面模块的业务逻辑入口 
+    │   │   │   ├── XXXXViewController.js      ----页面模块控制器，每个页面模块的业务逻辑入口 
     │   │   │   ├── module                     ----存放一些自有lib资源
     │   │   │   │   ├── KeyAnimation.js        ----逐帧库
     │   │   │   │   ├── MediaSprite.js         ----视频播放库
@@ -217,11 +217,11 @@
     │   │   └── lib                            ----存放一些需要用第三方lib包
     │   │       └── zepto.min.js
     │   ├── less
-    │   │   ├── common.less                    ----公用less
-    │   │   ├── keyframe.less                  ----animation-keyframe less
-    │   │   ├── reset.less                     ----重制浏览器样式 less
-    │   │   └── style.less                     ----页面布局 less
-    │   └── media                              ----存放媒体文件
+    │   │   ├── common.less                    ----公用less
+    │   │   ├── keyframe.less                  ----animation-keyframe less
+    │   │   ├── reset.less                     ----重制浏览器样式 less
+    │   │   └── style.less                     ----页面布局 less
+    │   └── media                              ----存放媒体文件
     │       └── XXX.mp3
     ├── .eslintrc                              ----elsint规则配置文件
     ├── .babelrc                               ----babel转译规则配置文件
@@ -232,7 +232,7 @@
     ├── webpack.config.prod.js                 ----webpack线上&正式环境配置文件
     └── webpack.config.zip.js                  ----webpack打包zip配置文件
     ```
-    - ****XXXXViewController.js --页面控制器主要结构****
+    - ****XXXXViewController.js --页面控制器主要结构****
     ```
     var XXXXViewController = function () {
         var _that = this;
@@ -267,7 +267,7 @@
     ```
     > tips：也可用es6 class的形式编写。
 
-    - ****index.js --程序主入口结构****
+    - ****index.js --程序主入口结构****
     ```
     作用： 各个模块的显示与隐藏的切换
 
