@@ -1,0 +1,6 @@
+node_modules
+.idea
+*.bat
+dist/
+.DS_Store
+package-lock.json
