@@ -1,7 +1,7 @@
 KeyAnimation.js
 ========
 
-逐帧绘制库。
+逐帧绘制库。
 
 ### 使用 ###
 
@@ -11,11 +11,11 @@ KeyAnimation.js
 
   data-keyto: 帧数
   ```
-  <div class="ns-kf" data-prefix="kf_XX_" data-keyto="32"></div>
+  <div class="ns-kf" data-prefix="kf_XX_" data-keyto="32"></div>
   ```
 - ****step2: load kf Img****
  
-   将逐帧图添加到资源加载中，Preload一起使用
+   将逐帧图添加到资源加载中，Preload一起使用
    ```
    // 以数组图为例：
    
@@ -75,25 +75,25 @@ KeyAnimation.js
 
   - `fromTo(10, 20, 1, callback)`;
 
-    param: 启始帧，结束帧，循环次数，结束回调
+    param: 启始帧，结束帧，循环次数，结束回调
 
   - `toFrom(20, 10, 1, callback)`;
 
-    param: 启始帧，结束帧（从低位结束），循环次数，结束回调
+    param: 启始帧，结束帧（从低位结束），循环次数，结束回调
 
   - `repeatplay(10, 20, 1, callback)`;  
     
     正播过去，再倒播回来
 
-    param: 启始帧，结束帧，循环次数，结束回调
+    param: 启始帧，结束帧，循环次数，结束回调
 
   - `from(10, 1, callback)`
 
-    param: 启始帧（从0开始），循环次数 || infinite，结束回调
+    param: 启始帧（从0开始），循环次数 || infinite，结束回调
 
   - `to(20, 1, callback)`
 
-    param: 结束帧（从0开始），循环次数 || infinite，结束回调
+    param: 结束帧（从0开始），循环次数 || infinite，结束回调
 
   - `goto(10)`
 
@@ -114,7 +114,7 @@ KeyAnimation.js
   - `pause()`
     
     暂停动画，目前只是使计时器内部函数不再运作，不推荐使用该方法
-             
+                 
   - `stop()`
     
     停止并回到第一帧或cover帧

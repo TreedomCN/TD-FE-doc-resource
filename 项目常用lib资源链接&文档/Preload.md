@@ -1,9 +1,9 @@
 Preload.js 
 ========
 
-项目预加载资源库。
+项目预加载资源库。
 
-### 使用 ###
+### 使用 ###
 
 ```
 var x = new Preload(param);
@@ -13,7 +13,7 @@ x.onloading = function (p) {
     console.log(p);
 }
 
-// 加载完成
+// 加载完成
 x.onload = function () {
     console.log('succback');
 }
@@ -30,11 +30,11 @@ x.load();
 ```
 param: object。
 
-imgs: Array (需要加载的单张图片资源)
+imgs: Array (需要加载的单张图片资源)
 
-sprites: Array (需要加载雪碧图逐帧资源)
+sprites: Array (需要加载雪碧图逐帧资源)
 
-keyimgs: Array (需要逐帧资源)
+keyimgs: Array (需要逐帧资源)
 
 ajaxs： Array (请求，一般很少用)
 ```
