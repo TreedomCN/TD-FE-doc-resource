@@ -11,9 +11,9 @@
   ```bash
       1、<script src="http://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
 
-      2、webpack 中去除对qqAPI.js的eslint检测
+      2、webpack 中去除对qqAPI.js的eslint检测
 
-      3、import { setShare } from './qqAPI';   // 引入需要用到的方法
+      3、import { setShare } from './qqAPI';   // 引入需要用到的方法
   ```
 
 * 接口描述
@@ -52,7 +52,7 @@
 
   - `setShare(shareData)`
     
-    设置分享
+    设置分享
 
     @shareData：分享配置 {object}
     
@@ -106,7 +106,7 @@
 
 * 文档地址：[http://tgideas.qq.com/doc/](http://tgideas.qq.com/doc/) 
 
-* 接口使用：
+* 接口使用：
 
   引入：
 
@@ -143,7 +143,7 @@
     TGMobileShare(shareText);
   ```
 
-  3、 微信登陆
+  3、微信登陆
 
   ```bash
     <script src="//game.gtimg.cn/images/js/su/TGLogin.min.js"></script>
