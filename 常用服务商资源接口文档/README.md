@@ -8,6 +8,7 @@
 * 接口使用
   
   引入：
+  
   ```bash
       1、<script src="http://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
 
@@ -165,7 +166,7 @@
             //QQ平台 - 进行手Q登录
             TGLoginManager.mQQLogin(function(uinfo) {
                 window.global.name = uinfo.nickname;
-            });
+            }); 
         } else {
             //非微信、QQ平台
             //拉起手QAPP打开页面
@@ -173,3 +174,57 @@
         }
     });
   ```
+  
+### 腾讯视频 ###
+
+- 文档地址：[腾讯视频统一播放器2.0.pdf](腾讯视频统一播放器2.0使用介绍(for第三方公司版本).pdf)
+
+- 基本使用:
+  
+  html: 
+  
+  ```bash
+  <div id="videoEmojiWrap" class="m-video"></div>
+  ```
+  
+  js:
+  
+  ```bash
+	window.txvideo = window.txvideo ? window.txvideo : new tvp.VideoInfo();
+	
+	window.txvideo.setVid(vid); // vid上传视频后获得
+	
+	window.txvideo.setHistoryStart(0);
+	window.txplayer = new tvp.Player();
+	
+	window.txplayer.create({
+	width: document.clientWidth,
+	height: document.clientHeight,
+	video: window.txvideo,
+	modId: 'videoEmojiWrap',
+	isShortVideo: false,
+	isHtml5AutoBuffer: true, // 启用缓存播放
+	//  禁用控制栏
+	html5ForbiddenUIFeature: ['controlbar', 'title', 'definition', 'play', 'replay'],
+	isHtml5ShowPosterOnEnd: true, // HTML5播放器播放完毕是否显示poster
+	isHtml5ShowPlayBtnOnPause: false, // HTML5在暂停的时候显示按钮
+	isHtml5UseAirPlay: true,
+	html5Preload: true,
+	isHtml5UseFakeFullScreen: false, // 是否使用伪全屏
+	isContinuePlay: false, // 是否续播
+	isHtml5ShowLoadingAdOnStart: false, // 播放视频是否播放广告
+	isHtml5ShowLoadingAdOnChange: false, // 切换视频时是否播放广告
+	isOcxHideControl: true, // 是否隐藏控制栏
+	autoplay: false,
+	onerror: function (e) {
+	    // 播放异常
+	    tcssReport('qqadult.vedio.error.' + e);
+	    // 主动上报到badjs
+	    throw new Error('vedio play error ：' + e);
+	}
+	});
+  ``` 
+  
+### 腾讯移动分析 ###
+
+- 文档地址：[http://docs.developer.qq.com/mta/](http://docs.developer.qq.com/mta/)
