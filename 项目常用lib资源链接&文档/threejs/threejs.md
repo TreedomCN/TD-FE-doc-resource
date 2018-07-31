@@ -1,15 +1,15 @@
-threejs 学习资源&案例参考
+threejs 学习资源&案例参考
 ========
 
 地址： [https://threejs.org/](https://threejs.org/)
 
 github：[https://github.com/mrdoob/three.js](https://github.com/mrdoob/three.js)
 
-### 学习资源list ###
+### 学习资源list ###
 
 * (描述) (地址)
 
-* threejs简单的使用 [http://davidscottlyons.com/threejs-intro/#slide-0](http://davidscottlyons.com/threejs-intro/#slide-0)
+* threejs简单的使用 [http://davidscottlyons.com/threejs-intro/#slide-0](http://davidscottlyons.com/threejs-intro/#slide-0)
 
 * 3d坐标换算： [https://medium.com/@Zadvorsky/into-vertex-shaders-part-1-the-spaces-of-webgl-c70ded527841](https://medium.com/@Zadvorsky/into-vertex-shaders-part-1-the-spaces-of-webgl-c70ded527841)
 
