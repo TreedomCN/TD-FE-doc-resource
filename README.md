@@ -28,7 +28,7 @@ TD-前端-资源文档
   - 新增腾讯视频&腾讯移动分析文档
   - 新增新员工引导模块
   - 生成gitbook （2018-08-13）
-  
+   
 
 * v1.0.0
 
@@ -36,11 +36,14 @@ TD-前端-资源文档
 
   - 添加项目常用lib资源&文档文件夹  
 
-### Step ### 
+### Steps ### 
 
 ```bash
 $ npm install gitbook-cli -g
 $ gitbook serve
+$ gitbook build
+
+--> 将build后生成的_book中的静态文件copy， 然后切换至gh-pages分支进行替换，然后git提交master，gh-pages内容
 
 $ git ...
 ```
