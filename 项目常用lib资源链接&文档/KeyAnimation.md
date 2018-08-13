@@ -3,20 +3,20 @@ KeyAnimation.js
 
 逐帧绘制库。
 
-### 使用 ###
+## 使用 ##
 
 - ****step1: create kf el****
 
   data-prefix: 逐帧图前缀
 
   data-keyto: 帧数
-  ```
+  ```html
   <div class="ns-kf" data-prefix="kf_XX_" data-keyto="32"></div>
   ```
 - ****step2: load kf Img****
- 
+
    将逐帧图添加到资源加载中，Preload一起使用
-   ```
+   ```javascript
    // 以数组图为例：
    
     Config.pageImgs = {
@@ -30,13 +30,13 @@ KeyAnimation.js
             }
         ]
     };
+   ```
   ```
 
 - ****step3: create kf object****
   
   在需要使用逐帧的地方
-  ```
-  /*
+  ```javascript
   new KeyAnimation(el, type：图片源模式, imgs, options);
   param: {
         el：canvas容器，jq对象；
@@ -61,17 +61,16 @@ KeyAnimation.js
       width: 750 / 2,  // 图片实际宽
       height: 1500 / 2 // 图片实际高
    });
-  */
   ```
 - ****play****
   得到逐帧对象后，调用其方法
-  ```
+  ```javascript
   kfObject.from();
   ...
   kfObject.XX();
   ```
 
-  ### Methods ###
+  ## Methods ##
 
   - `fromTo(10, 20, 1, callback)`;
 
@@ -114,7 +113,7 @@ KeyAnimation.js
   - `pause()`
     
     暂停动画，目前只是使计时器内部函数不再运作，不推荐使用该方法
-                 
+    
   - `stop()`
     
     停止并回到第一帧或cover帧
@@ -127,3 +126,7 @@ KeyAnimation.js
     
     销毁对象
 
+
+  ```
+
+  ```

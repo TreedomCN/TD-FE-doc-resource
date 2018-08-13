@@ -1,7 +1,7 @@
 常用服务商资源接口文档
 ========
 
-### QQ ###
+## QQ ##
 
 * 常用接口list---[qqAPI.js](qqAPI.js)
 
@@ -24,7 +24,7 @@
     判断是否手q环境
     
   - `isQzone`
-   
+  
     判断是否手Qzone环境  
     
   - `isQzone`
@@ -57,14 +57,14 @@
 
     @shareData：分享配置 {object}
     
-    ```bash
+    ```javascript
     window.shareConfig = {
         image_url: 'http://wa.qq.com/anniversary/1_100.png',
         title: '标题',
         desc: '分享描述？',
         share_url: location.origin + location.pathname + '?_wv=1'
     } 
-    ```  
+    ```
   - `getCookie(name)`
 
     获取指定cookie
@@ -72,7 +72,7 @@
     @name cookie字段名称
 
    - `getUin()`
-   
+  
      获取uin
 
   - `openApp(url)`
@@ -93,7 +93,7 @@
 
     @params：{object}
 
-    ```bash
+    ```javascript
     {
         text: '您的手机QQ版本过低，无法设置QQ头像，是否升级？',
         left: '取消',
@@ -101,9 +101,9 @@
         leftFunc: function () {},
         rightFunc: function () {}
     }
-    ```   
+    ```
 
-### 互动娱乐（tgideas） ###
+## 互动娱乐（tgideas） ##
 
 * 文档地址：[http://tgideas.qq.com/doc/](http://tgideas.qq.com/doc/) 
 
@@ -113,7 +113,7 @@
 
   1、 统计
 
-  ```bash
+  ```javascript
     <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 
     var setSite={
@@ -130,7 +130,7 @@
 
   2、分享：
 
-  ```bash
+  ```javascript
     <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 
     window.shareText = {
@@ -146,7 +146,7 @@
 
   3、微信登陆
 
-  ```bash
+  ```javascript
     <script src="//game.gtimg.cn/images/js/su/TGLogin.min.js"></script>
     
     TGLogin.init({
@@ -175,7 +175,7 @@
     });
   ```
   
-### 腾讯视频 ###
+## 腾讯视频 ##
 
 - 文档地址：[腾讯视频统一播放器2.0.pdf](腾讯视频统一播放器2.0使用介绍(for第三方公司版本).pdf)
 
@@ -183,13 +183,13 @@
   
   html: 
   
-  ```bash
+  ```html
   <div id="videoEmojiWrap" class="m-video"></div>
   ```
   
   js:
   
-  ```bash
+  ```javascript
 	window.txvideo = window.txvideo ? window.txvideo : new tvp.VideoInfo();
 	
 	window.txvideo.setVid(vid); // vid上传视频后获得
@@ -223,8 +223,8 @@
 	    throw new Error('vedio play error ：' + e);
 	}
 	});
-  ``` 
+  ```
   
-### 腾讯移动分析 ###
+## 腾讯移动分析 ##
 
 - 文档地址：[http://docs.developer.qq.com/mta/](http://docs.developer.qq.com/mta/)

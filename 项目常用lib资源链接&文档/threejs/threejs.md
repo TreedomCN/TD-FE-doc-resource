@@ -5,7 +5,7 @@ threejs 学习资源&案例参考
 
 github：[https://github.com/mrdoob/three.js](https://github.com/mrdoob/three.js)
 
-### 学习资源list ###
+## 学习资源list ##
 
 * (描述) (地址)
 
@@ -23,7 +23,7 @@ github：[https://github.com/mrdoob/three.js](https://github.com/mrdoob/three.js
 
 * ...
 
-### 案列参考list ###
+## 案列参考list ##
 
 * (描述) (地址)
 

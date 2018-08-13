@@ -3,9 +3,9 @@ Preload.js
 
 项目预加载资源库。
 
-### 使用 ###
+## 使用 ##
 
-```
+```javascript
 var x = new Preload(param);
 
 // 加载的进度，p返回当前加载进度（number）
@@ -37,7 +37,7 @@ sprites: Array (需要加载雪碧图逐帧资源)
 keyimgs: Array (需要逐帧资源)
 
 ajaxs： Array (请求，一般很少用)
-```
+```javascript
 param = {
     imgs: [
         {
@@ -81,12 +81,14 @@ param = {
     ]
 };
 ```
+## Methods ##
+...
 
-### 备注
+## 备注 ##
 
 加载完毕后Preload有一个全局的buffer，里面存了所有图片的键值对，格式如下例子：
 
-```
+```javascript
 x.buffer = {
     imgs: {
         bg: imgObj
