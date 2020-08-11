@@ -47,8 +47,7 @@
     ├── webpack.config.base.js                 ----webpack通用配置文件
     ├── webpack.config.dev.js                  ----webpack开发环境配置文件
     ├── webpack.config.handover.js             ----webpack交接配置文件
-    ├── webpack.config.prod.js                 ----webpack线上&正式环境配置文件
-    └── webpack.config.zip.js                  ----webpack打包zip配置文件
+    └── webpack.config.prod.js                 ----webpack线上&正式环境配置文件
     ```
   - ****XXXXViewController.js --页面控制器主要结构****
     ```javascript

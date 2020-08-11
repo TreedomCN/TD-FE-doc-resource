@@ -109,13 +109,23 @@
    // style code
    }
    ```
-```
+   
+   ```
+   * ***javascript***
 
-* ***javascript***
+      1. 尽量以<span style="color:#ff0000">模块化</span>的思路构建代码。
+      2. [eslint](#) 规则。
+   <br/>
 
-   1. 尽量以<span style="color:#ff0000">模块化</span>的思路构建代码。
-   2. [eslint](#) 规则。
-<br/>
+   > 统一缩进格式： <span style="color:#ff0000">：缩进形式一个tab（4格）</span>
+   ```
+### Git提交规范 ###
 
-> 统一缩进格式： <span style="color:#ff0000">：缩进形式一个tab（4格）</span>
-```
+   * feat：提交新功能
+   * fix：修复了bug
+   * docs：只修改了文档
+   * style：调整代码格式，未修改代码逻辑（比如修改空格、格式化、缺少分号等）
+   * refactor：代码重构，既没修复bug也没有添加新功能
+   * perf：性能优化，提高性能的代码更改
+   * test：添加或修改代码测试
+   * chore：对构建流程或辅助工具和依赖库（如文档生成等）的更改
